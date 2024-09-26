@@ -3,7 +3,6 @@ describe('pagina de login', () => {
   it('Login com sucesso', () => {
     cy.visit('http://127.0.0.1:5500/index.html');
 
-    //preencher os campos de usuario e senha
     cy.get('#usuario').type('admin');
     cy.get('#senha').type('admin');
     cy.get('#entrar').click()
